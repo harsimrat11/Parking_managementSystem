@@ -1,0 +1,64 @@
+/* Parking Space Styles */
+.mainContainerParkingSpace {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 117px; /* Padding around the main container */
+    background-color: #f4f4f4; /* Light background color */
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px; /* Main title font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.twowheeler, .threewheeler, .fourwheeler {
+    background-color: #ffffff; /* White background for each parking type */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Padding inside each parking section */
+    margin: 10px 0; /* Margin between parking sections */
+    width: 100%; /* Full width of the container */
+    max-width: 780px; /* Max width for larger screens */
+}
+
+h2 {
+    font-size: 20px; /* Subheading font size */
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 10px; /* Space below the subheading */
+}
+
+/* div > div { */
+    /* display: flex; Use flexbox for parking availability */
+    /* flex-wrap: wrap; Allow items to wrap to the next line */
+/* } */
+
+span {
+    background-color:#80ed99; /* Light gray background for availability status */
+    border-radius: 3px; /* Slightly rounded corners */
+    padding: 5px 10px; /* Padding inside status badges */
+    margin: 5px; /* Space between badges */
+    font-size: 14px; /* Font size for status text */
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .mainContainerParkingSpace {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller title font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller subheading font size */
+    }
+
+    .twowheeler, .threewheeler, .fourwheeler {
+        max-width: 100%; /* Full width on small screens */
+    }
+}

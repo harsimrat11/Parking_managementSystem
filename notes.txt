@@ -1,0 +1,3 @@
+pahle hamne react install ki , using command npx create-react-app client
+aur humne react app ko start kiya hai using command npm start
+

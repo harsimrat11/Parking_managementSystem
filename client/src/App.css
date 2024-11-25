@@ -1,5 +1,21 @@
+/* Add this to app.css or a global CSS file */
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
-  text-align: ;
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+  /* app.css */
+  max-width: 1200px; /* Optional max width */
+  margin: 0 auto; /* Center the app */
+  padding: 20px; /* Add some padding */
+}
+
+/* Add this to app.css */
+.content {
+  padding: 20px;
 }
 
 .App-logo {

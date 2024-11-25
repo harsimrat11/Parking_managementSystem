@@ -1,0 +1,69 @@
+/* Basic Profile Styles */
+.profile-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the card */
+    width: 300px; /* Fixed width for the card */
+    text-align: center; /* Center text */
+}
+
+.card_title {
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.card_title h1 {
+    font-size: 20px; /* Title font size */
+    color: #333; /* Dark text color */
+}
+
+.toggle-btn {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #007bff; /* Link color */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Font size for the button */
+}
+
+.form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+input {
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 10px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 14px; /* Font size for input text */
+}
+
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside button */
+    font-size: 14px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Full width on small screens */
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    .card_title h1 {
+        font-size: 18px; /* Smaller title font size */
+    }
+}

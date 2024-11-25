@@ -1,27 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id=""></input>
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Parking Space</a></li>
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">Wallet</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <h1 class="logo">Navbar</h1>
+    <nav className="navbar">
+      <div className="navbar-container n-container">
+        <input type="checkbox" name="" id="" />
+        <div className="hamburger-lines">
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+          <span className="line line3"></span>
         </div>
+        <ul className="menu-items">
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/parking-space">Parking Space</Link></li>
+          <li><Link to="/booking">Booking</Link></li>
+          <li><Link to="/wallet">Wallet</Link></li>
+          <li><Link to="/profile">Profile</Link></li> {/* Update this line */}
+          <li><Link to="/contact">Contact Us</Link></li>
+        </ul>
+        <h1 className="logo">P_SPACE</h1>
+      </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

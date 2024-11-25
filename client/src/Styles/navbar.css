@@ -6,16 +6,16 @@
     margin: 0;
 }
 
-.html{
+/* .html{
     font-size: 62.5%;
-}
+} */
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
 }
 
-.container{
+.n-container{
     max-width: 1200px;
     width: 90%;
     margin: auto;
@@ -27,8 +27,9 @@
     width: 100%;
     background: #fff;
     color: #000;
-    opacity: 0.85;
+    opacity: 1;
     z-index: 1000;
+    top: 0;
 }
 
 .navbar-container{
@@ -41,6 +42,7 @@
 .menu-items{
     order: 2;
     display: flex;
+    justify-content: left;
 }
 .logo{
     order: 1;

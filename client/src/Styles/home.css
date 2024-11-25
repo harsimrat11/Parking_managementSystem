@@ -1,0 +1,58 @@
+.home-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.image-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-option {
+    position: relative;
+    z-index: 1; /* Ensure the profile option is above the slider */
+    text-align: center;
+    color: white;
+}
+
+.pkr{
+    
+    font-size:50px;
+    /* padding-bottom:130px; */
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.profile-link:hover {
+    background-color: #0056b3;
+}
